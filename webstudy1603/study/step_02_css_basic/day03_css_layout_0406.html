@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    
+    <title>Document</title>
+    <style type="text/css">
+/*    reset.css  */
+        *{margin: 0; padding: 0;}/*  *의 뜻은 모든 element *{}  */
+        ul,ol,li{list-style: none;}/*lower-alpha:숫자, georgian:특문, none:없음*/
+        
+/*    design   */
+        #box{width: 600px; height: 500px; margin: 0 auto;}
+        #box>div{width: 100%;}
+        #header{height: 100px; background-color: #faa;}
+         h1{width: 60px; height: 60px; background-color: #579; font-size: 1em; margin: 20px; float: left;}
+         #gnb{width: 400px; height: 30px; background-color: #fff; float: right; margin-top: 50px; margin-right: 10px;}
+        #gnb>h2{width: 0; height: 0; overflow: hidden;}/*OR 오퍼시티 OR 폰트 0*/
+        #gnb>ul{width: 100%; height: 100%;}
+        #gnb>ul>li{width: 15%; height: 100%; float: left; background-color: #ccc; margin-right:2%;}
+        /*#gnb>ul>li.last_margin{margin-right:0;}*/
+        #gnb .last_margin{margin-right:0;}
+        #gnb>ul>li>a{width: 100%; height: 100%; display: block; background-color: #f6f;}
+/*   여백값(공간) 을 만들 떄 마진 속성 사용한다*/
+        #section{height: 300px;}
+        #section div{height: 50%; float: left;}
+        #section>#article{width: 30%; height: 100%; background-color: #ccc; float: right;}
+         #container{width: 70%; background-color: #333;}
+         #xbox{width: 70%; background-color: #3ff;}
+        #footer{height: 100px; background-color: #f0f;}
+        
+        
+    
+    </style>
+</head>
+<body>
+   <div id="box">
+       <div id="header">
+           <h1>logo</h1>
+           <div id="gnb">
+              <h2>메뉴영역</h2>
+               <ul>
+                   <li><a href="#">menu01</a></li>
+                   <li><a href="#">menu02</a></li>
+                   <li><a href="#">menu03</a></li>
+                   <li><a href="#">menu04</a></li>
+                   <li><a href="#">menu05</a></li>
+                   <li class="last_margin"><a href="#">menu06</a></li>
+               </ul>
+           </div><!--//gnb-->
+       </div><!--//header-->
+       <div id="section">
+           <div id="article">article</div><!--//article-->
+           <div id="container">container</div><!--//container-->
+           <div id="xbox">xbox</div><!--//xbox-->
+       </div><!--//section-->
+       <div id="footer">footer</div><!--//footer-->
+   </div><!--// box-->
+    
+</body>
+</html>
