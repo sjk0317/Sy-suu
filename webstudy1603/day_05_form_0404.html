@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    
+</head>
+<body>
+    <div id="wrap">
+        <h1>form_2</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>폼 영역의 제목</legend>
+                <label for="user">아이디 입력</label>
+                <input type="text" name="" id="" value="" />
+                <label for="user">비밀번호 입력</label>
+                <input type="password" name="pwd" id="pwd" value="" />
+            </fieldset>
+            <fieldset id ="selectBox">
+                <input type="radio" name="sel_01" id="ra_01" value="" />
+                <label for="ra_"
+                <input type="radio" name="sel_01" id="ra_01" value="" />
+                <input type="radio" name="sel_01" id="ra_01" value="" />
+                
+                <hr />
+                <label>
+                    <input type="checkbox" name="sel_02" value="" />
+                    암묵적 스타일1
+                </label>
+                <label for="ck_02">정식 방법</label>
+                <input type="checkbox" name="sel_02" id="ck_02" value="" />
+                
+                <label for="ck_03">정식 방법</label>
+                <input type="checkbox" name="sel_02" id="ck_03" value="" />
+            </fieldset>
+            <fieldset>
+               <legend>버튼</legend><!--썸밋은 다음페이지, 버튼은 그냥 그 페이지-->
+                <input type="submit" name="ok" value="ok" id="ok"><!--이미지가 새로고침됨> 썸밋이라서-->
+                <input type="reset" name="calcle" value="calcle" id="calcle">
+                <input type="button" name="btn" value="btn" id="btn"><!--여기까지가 저번주 한거-->
+                <input type="image" src="./table_test_img/27x27_am_01.png" name="" />
+                <input type="file" name="fileData" value="" id="fileData" />
+            </fieldset>
+            <fieldset id="etc">
+                <legend>기타기능</legend><!--콜스 세로 로우스 가로 저기에 적어주는 사이즈가 최소의 사이즈 키우는건 가능-->
+                <textarea name="" id="" cols="30" rows="10">
+                    입력할 수 있는 대화창
+                    줄바꿈과,         스페이스
+                    탭기능         모두적용
+                </textarea>
+                <!--지우고 새로쓸 수 있음 여기칸에 계약서쓰면안됨 수정가능해서-->
+                <!--이걸 쓸 수밖에 없다면 readonly="readonly" 쓸 것-->
+                <select name="sendSelect" id="sendSelect">
+                    <option>선택하세요</option>
+                    <optgroup label="피복류">
+                        <option value="hat">모자</option>
+                        <option value="glove">장갑</option>
+                        <option value="sax">양말</option>
+                    </optgroup>
+                    <optgroup label="악세사리">
+                        <option value="earing">귀걸이</option>
+                        <option value="ring">반지</option>
+                    </optgroup>
+                    <optgroup label="가전제품">
+                        <option value="radioBox">라디오</option>
+                    </optgroup>
+                </select>
+                <button type="button"><!--그냥 버튼안에 글쓰면 버튼생김 버튼안에 타입 세가지 고를수잇음-->
+                    내용을 확인하는 버튼
+                    <img src="./img" alt="이미지 버튼 만들기" />
+                    
+                </button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

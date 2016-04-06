@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--         xx:ie6 하고 탭     -->
+    <!--[if lte IE 9]>
+       <script type="text/javascript">
+       alert("구형브라우저를 사용하고 계십니다, 크롬이나 최신 브라우저를 이용하세요.");
+       </script>   
+        
+    <![endif]-->
+    <title>Document</title>
+    <style type="text/css">
+        li > a {color: #137bb3; text-decoration: none;}
+        /*#header .ul_box > li > a {color: #fa0;}*/                             /*꺽쇠 쓴다고 다 통일해야하는거 아님 꺽쇠쓰고 .쓰고 가능*/
+        ul.ul_box > li a {color: #f99;}
+        ul .ul_box > > il a {color: #f55;}                            /*ul.ul은 자기자신*/
+ 
+    
+    </style>
+    <script type="javascript">
+    </script>
+
+    
+</head>
+<body>
+   <div id="wrap">
+       <div id="header">
+           <h1>제목<a href="http://naver.com">링크</a></h1>
+           <div>
+               <ul class="ul_box">
+                   <li><a href="#">plustext_01_list_01</a></li>
+                   <li><a href="#">plustext_02_list_02</a></li>
+                   <li><a href="#">plustext_03_list_03</a></li>
+                   <li>
+                       <ul class="list_box">
+                           <li><a href="#">추가 리스트</a></li>
+                           <li><a href="#">추가 리스트</a></li>
+                           <li><a href="#">추가 리스트</a></li>
+                           <li><a href="#">추가 리스트</a></li>
+                           <li><a href="#">추가 리스트</a></li>
+                           <li><a href="#">추가 리스트</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           </div><!--이름정의없음-->
+       </div><!-- #header-->
+       <div id="article">
+           <h2>본문영역</h2>
+           <ol class="ul_box">
+               <li><a href="#">추가 리스트 영역</a></li>
+               <li><a href="#">추가 리스트 영역</a></li>
+               <li><a href="#">추가 리스트 영역</a></li>
+               <li><a href="#">추가 리스트 영역</a></li>
+           </ol>
+       </div><!--  #article-->
+       <div id="footer">
+           <h2>하단 정보영역</h2>
+           <p>aasgsgsggggggggggggggggggggggg</p>
+           <div>dddddddddddddddddddd</div>
+           <ul>
+               <li>sssssssssssss</li>
+               
+           </ul>
+       </div><!--  #footer-->
+   </div><!--  #wrap-->
+    
+</body>
+</html>
+<!--
+    자식선택자: ">"로 구분하여 해당하는  태그 내부(자식태그 선택시)
+    자손선택자: " "로(띄어쓰기) 구분 태그의 내부(자손영역, 자식의 자식, 자식, 자식부터해서 그 아래것 다 포함)
+    -->

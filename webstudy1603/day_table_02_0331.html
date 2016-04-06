@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>table_02</title>
+    <style type="text/css">
+        table, td, th, tr{
+            border-width:1px;
+            border-style:solid;
+            border-color:@0af;
+            border-spacing:0; border-collapse:collapse;}
+        table{width:700px; height:1200px;}
+        thead{background-color: }
+        tfoot{background-color: }
+    </style>
+    <script type="text/javascript"></script>
+</head>
+<body>
+   <div id="wrap">
+       <h2>table2</h2>
+       
+       <table summary="간단한 가계부 목록 만들기">
+           <caption>가계부 만들기</caption>
+         <thead>
+           <tr><th>날짜</th><th>적요</th><th>입금</th><th>출금</th><th>계</th><!--제목--></tr>
+         </thead>
+         <tbody>
+           <tr><td>3/31</td><td>바나나</td><td>0</td><td>1500원</td><td>-1500원</td><!--내용1--></tr>
+           <tr><td>4/1</td><td>초코</td><td>0</td><td>500원</td><td>-500원</td><!--내용1--></tr>
+           <tr><td>4/2</td><td>김밥</td><td>0</td><td>1500원</td><td>-1500원</td><!--내용1--></tr>
+           <tr><td>4/3</td><td>용돈</td><td>100</td><td>0원</td><td>+100원</td><!--내용1--></tr>
+         </tbody>
+         <tfoot>
+             <tr><th colspan="4">총 계</th><td><a href=""></a>xxxx원</td></tr><!--이미지 링크도 할 수있다-->
+         </tfoot><!--티풋 티헤드로 지정했으면 줄위치 다르게 써도 그 위치에 나옴 풋은 맨아래 등등-->
+       </table>
+   </div>
+    
+</body>
+</html>

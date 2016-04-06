@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table, tr, td, th{border-width:1px; border-style:solid; border-color:#fa0; border-spacing:0;
+        border-collapse:collapse;}/*테이블 옆의 콤마는 테이블 이외에... */
+        table{width:400px; height:600px;}/*테이블을 또 따로 쓴 이유는 위의 테이블설정은 테이블과 셀 안의 선 하나하나 설정이기 때문에 전체 표 크기설정만 해주려고 따로 또 쓴 것*/
+        th{background-color:#acf;}
+        td{text-align:center; font-size:20pt;}
+        /*th는 어차피 가운데정렬이기 때문에 td도 하고싶으면 추가설정 넣어주기, 폰트크기조정 넣을 때 px 아니고 pt */
+        /*
+        간단 단위설명: 16px = 12pt = 100%(상대적인 값, 최초사이즈에 대한..) = 1em = 1rem
+        */
+    </style>
+    <!--스타일에는 <> 안쓴다 쓰면 안먹는다-->
+    <script></script>
+</head>
+<body>
+  <div id="wrap">
+    <h1>table 익히기</h1>
+    <table border="1" summary="연습용"><!--boder 숫자는 테두리 굵기, summary는 상세한설명 전혀 밖으로 표시안됨-->
+     <caption>table 연습</caption><!--제목-->
+      <tr>
+        <th colspan="2">1-1</th>
+        <th>1-3</th>
+        <th rowspan="2">1-4</th>
+      </tr>
+      <tr>
+        <td rowspan="2">2-1</td>
+        <td colspan="2">2-2</td>
+      </tr>
+      <tr>
+        <td>3-2</td>
+        <td colspan="2" rowspan="2">3-3</td>
+      </tr>
+      <tr>
+        <td colspan="2">4-1</td>
+      </tr>      
+   </table>
+  </div>
+    
+</body>
+</html>
